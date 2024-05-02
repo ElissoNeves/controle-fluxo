@@ -1,3 +1,6 @@
+//Aqui você tem uma condição com a implementação do if e do else
+
+
 import java.util.Locale;
 import java.util.Scanner;
 
