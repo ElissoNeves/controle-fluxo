@@ -11,20 +11,8 @@ public class LaçoRepetição {
     
         String alunos []= {"Elisson", "Mateus", "Eulemaque", "Murilo"};
         for ( String aluno : alunos){
-            System.out.println("\nNome do aluno é: " + aluno);
+            System.out.println("Nome do aluno é: " + aluno);
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     }
 }

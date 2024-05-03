@@ -13,13 +13,14 @@ public class Menu {
         System.out.println("Digite seu nome: ");
         String nome = scanner.nextLine();
         
+        System.out.println("\nDigite sua sigla: ");
         System.out.println("_______________MENU_______________");
         System.out.println("PJ");
         System.out.println("PF");
         System.out.println("CP");
         System.out.println("__________________________________");
 
-        System.out.println("Digite sua sigla: ");
+        
         String sigla = scanner.next();
         
         switch (sigla) {
@@ -39,7 +40,7 @@ public class Menu {
                 break;
         }
 
-        System.out.println("Digite a opção desejada: ");
+        System.out.println("\nDigite a opção desejada: ");
         System.out.println("_______________MENU_______________");
         System.out.println("1: Sacar");
         System.out.println("2: Depositar");
@@ -53,7 +54,7 @@ public class Menu {
             case "1":{
                 System.out.println("Informe o valor do saque: ");
                 double valorSaque = scanner.nextDouble();
-                double novoSaldo = valorSaque - saldo;
+                double novoSaldo = saldo - valorSaque;
                 if (valorSaque <= saldo) {
                     System.out.println("Saque realizado com sucesso");
                     System.out.println("Este é seu Saldo: " + novoSaldo);
